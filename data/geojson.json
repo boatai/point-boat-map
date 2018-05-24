@@ -1,0 +1,285 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.872801303863525,
+          52.372743385949754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.867393970489502,
+          52.371773947122634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "point 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.872007369995117,
+          52.36515761406016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.874711036682129,
+          52.365956867310075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.877479076385498,
+          52.366769208255185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8754191398620605,
+          52.370018422662454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8753976821899405,
+          52.373345999360986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.875590801239014,
+          52.373752103761426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.876813888549805,
+          52.37368660330425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.877157211303711,
+          52.37045075978871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.879045486450195,
+          52.367778062504485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8798394203186035,
+          52.36667749309006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8665571212768555,
+          52.37174774577795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.857630729675293,
+          52.36165907311774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "style": {
+          "externalGraphic": "pickup-marker.svg",
+          "graphicWith": 16,
+          "graphicHeight": 26
+      },
+        "icon": "pickup-marker.svg",
+        "description": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.869818687438965,
+          52.36858054375038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "pickup-marker.svg",
+        "scaledSize": "new google.maps.Size(50, 50)",
+        "type": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.872168302536011,
+          52.3693502569621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "pickup-marker.svg",
+        "scaledSize": "new google.maps.Size(50, 50)",
+        "type": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.871116876602173,
+          52.37261565705108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "pickup-marker.svg",
+        "scaledSize": "new google.maps.Size(50, 50)",
+        "type": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8720985651016235,
+          52.371479181098664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "pickup-marker.svg",
+        "scaledSize": "new google.maps.Size(50, 50)",
+        "type": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.873246550559998,
+          52.365413114622235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "pickup-marker.svg",
+        "scaledSize": "new google.maps.Size(50, 50)",
+        "type": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8742711544036865,
+          52.371924604553016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "pickup-marker.svg",
+        "scaledSize": "new google.maps.Size(50, 50)",
+        "type": "aanlegplaats"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.876073598861694,
+          52.37379467900651
+        ]
+      }
+    }
+  ]
+}

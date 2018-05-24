@@ -1,32 +1,32 @@
 {
-    "points": {
-        "1": {
+    "points": [
+        {
             "title": "Jordaan 1",
-            "lat": "52.373330",
-            "lng": "4.875424",
+            "lat": 52.373330,
+            "lng": 4.875424,
             "directions": {
                 "bearing1" : 30,                
                 "bearing2" : 30
             }
         },
-        "2": {
+        {
             "title": "DaCostabuurt 1",
-            "lat": "52.372850",
-            "lng": "4.872953",
+            "lat": 52.372850,
+            "lng": 4.872953,
             "directions": {
                 "bearing1" : 30,                
                 "bearing2" : 30
             }
         },
-        "3": {
+        {
             "title": "Jacob Van Lennepkade 1",
-            "lat": "52.365985",
-            "lng": "4.874705",
+            "lat": 52.365985,
+            "lng": 4.874705,
             "directions": {
                 "bearing1" : 30,                
                 "bearing2" : 30
             }
         }
 
-    }
+    ]
 }
