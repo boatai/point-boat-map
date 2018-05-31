@@ -1,9 +1,18 @@
 {
     "points": [
         {
+            "title": "Van Lennepbuurt",
+            "lat": 52.361940,
+            "lon": 4.857938,
+            "directions": {
+                "bearing1" : 30,                
+                "bearing2" : 30
+            }
+        },
+        {
             "title": "Jordaan 1",
             "lat": 52.373330,
-            "lng": 4.875424,
+            "lon": 4.875424,
             "directions": {
                 "bearing1" : 30,                
                 "bearing2" : 30
@@ -12,7 +21,7 @@
         {
             "title": "DaCostabuurt 1",
             "lat": 52.372850,
-            "lng": 4.872953,
+            "lon": 4.872953,
             "directions": {
                 "bearing1" : 30,                
                 "bearing2" : 30
@@ -21,12 +30,11 @@
         {
             "title": "Jacob Van Lennepkade 1",
             "lat": 52.365985,
-            "lng": 4.874705,
+            "lon": 4.874705,
             "directions": {
                 "bearing1" : 30,                
                 "bearing2" : 30
             }
         }
-
     ]
 }
