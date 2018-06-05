@@ -70,6 +70,7 @@ fetch('./data/dock-points.json')
       // Examine the text in the response
       response.json().then(function(data) {
         calculate(data); // call calculate function when the data is received
+        console.log(route)
       });
     }
   )
@@ -85,51 +86,44 @@ function calculate(data) {
     var lat2 = boatPos[0];
     var lon2 = boatPos[1];
 
+    route.push(["boat", 0, lat2, lon2])
+
     var points = data.points;   // get the points data in own array
     var distances = new Array();// make temporary array for the distances
-    console.log(points);
     // points.shift();
     // console.log(points);
-
-    route.push(["boat", 0, lat2, lon2])
     
-
     // 2. loop through points and calculate distance between points and boat
-    for(var i = 0; i < points.length; i++){
-
-        // get point coordinations
-        var lat1 = points[i].lat;
-        var lon1 = points[i].lon;
-
+    var i = 0;
+    for(const point of points){
+        console.log(point.lat)
         // call distance function
-        var distance = getDistance(lat1, lon1, lat2, lon2);
+        var distance = getDistance(point.lat, point.lon, lat2, lon2);
 
         // put the distance from the boat to the point in an array
         var location = new Array();
-        location[0] = points[i].title;
+        location[0] = point.title;
         location[1] = Number(distance)*1000; // *1000 to get meters instead of km's
-        location[2] = lat1;
-        location[3] = lon1;
+        location[2] = point.lat;
+        location[3] = point.lon;
         distances.push(location);
 
         var arrayPos = i + 1;
         if(arrayPos == points.length){
+            // from here the next points should also be calculated
             distances.sort(compareSecondColumn)
             route.push(distances[0]);
             distances.shift();
-            console.log("Distances:");
-            console.log(distances);
-            nextPoint(distances, route)
+            console.log("route: ")
+            console.log(route)
+            console.log("distances: ")
+            console.log(distances)
+            // nextPoint(distances, route)
         }
+
+        i++;
     }
 
-    console.log("Points:");
-    console.log(points);
-    console.log("Route:");
-    console.log(route);
-    // sort the array by distance
-    // distances.sort(compareSecondColumn)
-    // console.log(distances)
 }
 
 function nextPoint(distances, route) {
@@ -139,8 +133,6 @@ function nextPoint(distances, route) {
     var lastRoutePoint = route[lastRouteNum];
     var lat2 = lastRoutePoint[2];
     var lon2 = lastRoutePoint[3];
-    console.log(lastRoutePoint);
-    console.log(lat2)
 
     if(tempDistances.length <= 1) {
         route.push(tempDistances);
@@ -172,6 +164,10 @@ function nextPoint(distances, route) {
             }
         }
     }
+}
+
+function compareArray(array, currentGeo){
+
 }
 
 // function to sort multidimensional array for the second column
