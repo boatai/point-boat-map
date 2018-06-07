@@ -1,51 +1,47 @@
-var map;
-var pointData;
-const url = "./data/points.json";
+var map; // make map globally accessible
+const url = "./data/points.json"; //path to points.json file (can be replaced by api link later)
 
-var jsonData;
-
-var boatMarker;
-
-var boatPos = [52.373, 4.874]; // [lat, lon]
-var points = new Array();
-var route = new Array();    // create route array
-
+var boatPos = [52.373, 4.874]; // [lat, lon] position of the boat
 
 function initMap() {
+    // initialize map
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: boatPos[0], lng: boatPos[1]},
         zoom: 15
     });
     console.log("map initialized");
-    map.data.loadGeoJson('data/geojson.json');
+    map.data.loadGeoJson('data/geojson.json'); // load map markers from geojson file
 
+    // add boat marker
     var icon = {
         url: "assets/icons/boat-marker.svg",
         scaledSize: new google.maps.Size(50, 50)
     };
-    boatMarker = new google.maps.Marker({
-        position: {lat: 52.373, lng: 4.874},
+    var boatMarker = new google.maps.Marker({
+        position: {lat: boatPos[0], lng: boatPos[1]},
         map: map,
         icon: icon
     });
-    
-    var newLat = boatPos[0];
-    var newLon = boatPos[1];
 
+    // activate algorithm
     routeData();
 
-    function loop() {
-        // console.log("boat lat: "+newLat+" lon: "+newLon)
+    // Move the boat marker
+    // var newLat = boatPos[0];
+    // var newLon = boatPos[1];
 
-        // newLat += 0.00001;
-        // newLon += 0.00001;
-        // var newLatLon = new google.maps.LatLon(newLat, newLon);
-        // map.setCenter(newLatLon);
-        // boatMarker.setPosition(newLatLon);
+    // function loop() {
+    //     console.log("boat lat: "+newLat+" lon: "+newLon)
 
-        window.requestAnimationFrame(loop);
-    }
-    window.requestAnimationFrame(loop);
+    //     newLat += 0.00001;
+    //     newLon += 0.00001;
+    //     var newLatLon = new google.maps.LatLon(newLat, newLon);
+    //     map.setCenter(newLatLon);
+    //     boatMarker.setPosition(newLatLon);
+
+    //     window.requestAnimationFrame(loop);
+    // }
+    // window.requestAnimationFrame(loop);
 }
 
 
@@ -57,6 +53,10 @@ function initMap() {
 // 2.2. remove this point from points array
 // 3. take the last point from route array and calculate nearest point from points array
 // 4. repeat 2.1 & 2.2
+
+// make global arrays
+var points = new Array();
+var route = new Array();
 
 // 1.
 // fetch dockPoints data
