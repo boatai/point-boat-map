@@ -74,6 +74,7 @@ function routeData(){
             response.json().then(function(data) {
                 routeResult = calculateRoute(data); // call calculate function when the data is received
                 drawPath(routeResult);
+                postApi(routeResult);
             });
         }
     )
@@ -168,8 +169,27 @@ function drawPath(routeResult) {
     routePath.setMap(map); // add to map
 }
 
-
-
+// function to push result to API
+function postApi(route){
+    var jsonRoute = JSON.stringify({ data: route })
+    fetch('http://vps1.nickforall.nl:6123/route', {
+        method: 'post',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: jsonRoute
+    })
+    .then(function (response) {
+        return response;
+    })
+    .then(function (result) {
+        console.log("post succes: "+ result);
+    })
+    .catch (function (error) {
+        console.log('Request failed', error);
+    });
+}
 
 // function to sort multidimensional array for the second column
 function compareSecondColumn(a, b) {
@@ -191,3 +211,4 @@ function getDistance(lat1, lon1, lat2, lon2) {
   
     return 12742 * Math.asin(Math.sqrt(a)); // 2 * R; R = 6371 km
 }
+
