@@ -1,7 +1,6 @@
 var map; // make map globally accessible
 const url = "./data/points.json"; //path to points.json file (can be replaced by api link later)
-
-var boatPos = [52.373, 4.874]; // [lat, lon] position of the boat
+var boatPos = [52.371168, 4.867789]; // [lat, lon] position of the boat
 
 function initMap() {
     // initialize map
