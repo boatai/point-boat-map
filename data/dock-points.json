@@ -35,6 +35,15 @@
                 "bearing1" : 30,                
                 "bearing2" : 30
             }
+        },
+        {
+            "title": "S100",
+            "lat": 52.367003,
+            "lon": 4.877428,
+            "directions": {
+                "bearing1" : 30,                
+                "bearing2" : 30
+            }
         }
     ]
 }
